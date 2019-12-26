@@ -1,0 +1,25 @@
+{
+  "name": "easy-os",
+  "version": "1.0.0",
+  "description": "Sistema de ordem de serviço, desenvolvido em Node.js.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "OS",
+    "Ordem",
+    "de",
+    "Serviço",
+    "Easy",
+    "OS"
+  ],
+  "author": "Diego Souza - souzadh1991@outlook.com",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "nodemon": "^2.0.2"
+  }
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Easy OS</title>
+    <!-- Favicon-->
+    <link rel="icon" href="/assets/images/favicon.png" type="image/x-icon">
+
+    <!-- Plugins Core Css -->
+    <link href="/assets/css/app.min.css" rel="stylesheet">
+    
+    <!-- Custom Css -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+
+    <!-- Font Awesome 5.12 -->
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-5.12/css/all.min.css">
+
+    <!-- You can choose a theme from css/styles instead of get all themes -->
+    <link href="/assets/css/styles/all-themes.css" rel="stylesheet" />
+</head>
+
+<body class="theme-red">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+		<div class="loader">
+			<div class="m-t-30">
+				<img class="loading-img-spin" src="/assets/images/loading.png"
+					width="20" height="20" alt="admin">
+			</div>
+			<p>Please wait...</p>
+		</div>
+	</div>
+    <!-- #END# Page Loader -->
+    <!-- Overlay For Sidebars -->
+    <div class="overlay"></div>
+    <!-- #END# Overlay For Sidebars -->
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+        <input type="text" placeholder="START TYPING...">
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+    <!-- #END# Search Bar -->
+    <!-- Top Bar -->
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="/dashboard"><img src="/assets/images/logo.png" width="40" alt="Easy OS"/> <span class="logo-name">Easy OS</span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+            	<ul class="pull-left nav-left-menu">
+            		<li><a href="javascript:void(0);" class="sidemenu-collapse"><i class="material-icons">swap_horiz</i></a></li>
+            	</ul>
+                <ul class="nav navbar-nav navbar-right">
+                	<!-- Full Screen Button -->
+                	<li class="fullscreen"><a href="javascript:;" class="fullscreen-btn"><i class="material-icons">fullscreen</i></a></li>
+                	<!-- #END# Full Screen Button -->
+                    <!-- Call Search -->
+                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+                    <!-- #END# Call Search -->
+                    <!-- Notifications -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">notifications_none</i>
+                            <span class="label-count bg-orange">7</span>
+                        </a>
+                        <ul class="dropdown-menu pullDown">
+                            <li class="header">NOTIFICATIONS</li>
+                            <li class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="icon-circle bg-light-green">
+                                                <i class="material-icons">person_add</i>
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">12 new members joined</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 14 mins ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="icon-circle bg-cyan">
+                                                <i class="material-icons">add_shopping_cart</i>
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">4 sales made</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 22 mins ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="icon-circle bg-red">
+                                                <i class="material-icons">delete_forever</i>
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title"><b>Nancy Doe</b> deleted account</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="icon-circle bg-orange">
+                                                <i class="material-icons">mode_edit</i>
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title"><b>Nancy</b> changed name</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 2 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="icon-circle bg-blue-grey">
+                                                <i class="material-icons">comment</i>
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title"><b>John</b> commented your post</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 4 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="icon-circle bg-light-green">
+                                                <i class="material-icons">cached</i>
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title"><b>John</b> updated status</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="icon-circle bg-purple">
+                                                <i class="material-icons">settings</i>
+                                            </span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Settings updated</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> Yesterday
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="javascript:void(0);">View All Notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Notifications -->
+                    <!-- #START# Message-->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">mail_outline</i>
+                            <span class="label-count bg-green">4</span>
+                        </a>
+                        <ul class="dropdown-menu pullDown">
+                            <li class="header">MESSAGES</li>
+                            <li class="body">
+                                <ul class="menu">
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="table-img msg-user">
+												<img src="/assets/images/user/user1.jpg" alt="">
+											</span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Sarah Smith</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 14 mins ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="table-img msg-user">
+												<img src="/assets/images/user/user2.jpg" alt="">
+											</span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Airi Satou</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 22 mins ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="table-img msg-user">
+												<img src="/assets/images/user/user3.jpg" alt="">
+											</span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">John Doe</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="table-img msg-user">
+												<img src="/assets/images/user/user4.jpg" alt="">
+											</span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Ashton Cox</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 2 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="table-img msg-user">
+												<img src="/assets/images/user/user5.jpg" alt="">
+											</span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Cara Stevens</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 4 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="table-img msg-user">
+												<img src="/assets/images/user/user6.jpg" alt="">
+											</span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">Charde Marshall</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> 3 hours ago
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                            <span class="table-img msg-user">
+												<img src="/assets/images/user/user7.jpg" alt="">
+											</span>
+                                            <span class="menu-info">
+                                                <span class="menu-title">John Doe</span>
+                                                <span class="menu-desc">
+                                                    <i class="material-icons">access_time</i> Yesterday
+                                                </span>
+                                                <span class="menu-desc">Please check your email.</span>
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="footer">
+                                <a href="javascript:void(0);">View All Messages</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Message-->
+                    <li class="dropdown user_profile">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <img src="/assets/images/user.jpg" width="32" height="32" alt="User">
+                        </a>
+                        <ul class="dropdown-menu pullDown">
+                            <li class="body">
+                                <ul class="user_dw_menu">
+                                	<li>
+                                        <a href="javascript:void(0);">
+                                           <i class="material-icons">person</i>Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                           <i class="material-icons">feedback</i>Feedback
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                           <i class="material-icons">help</i>Help
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);">
+                                           <i class="material-icons">power_settings_new</i>Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- #END# Tasks -->
+                    <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #Top Bar -->
+    <div>
+        {{> home/home-nav}}
+        <!-- Right Sidebar -->
+        <aside id="rightsidebar" class="right-sidebar">
+            <ul class="nav nav-tabs tab-nav-right" role="tablist">
+                <li role="presentation"><a href="#skins" data-toggle="tab" class="active">SKINS</a></li>
+                <li role="presentation"><a href="#settings" data-toggle="tab">SETTINGS</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane in active in active stretchLeft" id="skins">
+                	<div class="demo-skin">
+                    <div class="rightSetting">
+                    <p>GENERAL SETTINGS</p>
+                    <ul class="setting-list list-unstyled">
+                        <li>
+                           <div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input chk-col-gray" type="checkbox" checked>
+									<span class="form-check-sign"></span>
+									Save History
+								</label>
+							</div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input chk-col-gray" type="checkbox" checked>
+									<span class="form-check-sign"></span>
+									Show Status
+								</label>
+							</div>
+                        </li>
+                        <li>
+                            <div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input chk-col-gray" type="checkbox" checked>
+									<span class="form-check-sign"></span>
+									Auto Submit Issue
+								</label>
+							</div>                    
+                        </li>
+                        <li>
+                            <div class="form-check">
+								<label class="form-check-label">
+									<input class="form-check-input chk-col-gray" type="checkbox" checked>
+									<span class="form-check-sign"></span>
+									Show Status To All
+								</label>
+							</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rightSetting">
+                    <p>SIDEBAR MENU COLORS</p>
+                    <button type="button" class="btn btn-sidebar-light btn-border-radius p-l-20 p-r-20">Light</button>
+                    <button type="button" class="btn btn-sidebar-dark btn-default btn-border-radius p-l-20 p-r-20">Dark</button>
+                </div>                
+                <div class="rightSetting">
+                    <p>SKINS</p>
+                    <ul class="demo-choose-skin choose-theme list-unstyled">
+                    	<li data-theme="white" class="actived">
+                            <div class="white white-theme-border"></div>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div>
+                        </li>
+                        <li data-theme="red">
+                            <div class="red"></div>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div>
+                        </li>
+                        <li data-theme="deep-purple">
+                            <div class="deep-purple"></div>
+                        </li>
+                        <li data-theme="indigo">
+                            <div class="indigo"></div>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div>
+                        </li>
+                        <li data-theme="light-blue">
+                            <div class="light-blue"></div>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div>
+                        </li>
+                        <li data-theme="yellow">
+                            <div class="yellow"></div>
+                        </li>
+                        <li data-theme="amber">
+                            <div class="amber"></div>
+                        </li>
+                        <li data-theme="orange">
+                            <div class="orange"></div>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="rightSetting">
+                    <p>Logo Header</p>
+                    <ul class="demo-choose-logoheader choose-theme-logoheader list-unstyled">
+                    	<li data-theme="light-blue" class="actived">
+                            <div class="light-blue"></div>
+                        </li>
+                        <li data-theme="black">
+                            <div class="black"></div>
+                        </li>
+                        <li data-theme="red">
+                            <div class="red"></div>
+                        </li>
+                        <li data-theme="purple">
+                            <div class="purple"></div>
+                        </li>
+                        <li data-theme="deep-purple">
+                            <div class="deep-purple"></div>
+                        </li>
+                        <li data-theme="indigo">
+                            <div class="indigo"></div>
+                        </li>
+                        <li data-theme="blue">
+                            <div class="blue"></div>
+                        </li>
+                        <li data-theme="cyan">
+                            <div class="cyan"></div>
+                        </li>
+                        <li data-theme="green">
+                            <div class="green"></div>
+                        </li>
+                        <li data-theme="yellow">
+                            <div class="yellow"></div>
+                        </li>
+                        <li data-theme="amber">
+                            <div class="amber"></div>
+                        </li>
+                        <li data-theme="orange">
+                            <div class="orange"></div>
+                        </li>
+                        <li data-theme="deep-orange">
+                            <div class="deep-orange"></div>
+                        </li>
+                        <li data-theme="blue-grey">
+                            <div class="blue-grey"></div>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+                </div>
+                <div role="tabpanel" class="tab-pane stretchRight" id="settings">
+                    <div class="demo-settings">
+                        <p>GENERAL SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Report Panel Usage</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Email Redirect</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>SYSTEM SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Notifications</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Auto Updates</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p>ACCOUNT SETTINGS</p>
+                        <ul class="setting-list">
+                            <li>
+                                <span>Offline</span>
+                                <div class="switch">
+                                    <label><input type="checkbox"><span class="lever"></span></label>
+                                </div>
+                            </li>
+                            <li>
+                                <span>Location Permission</span>
+                                <div class="switch">
+                                    <label><input type="checkbox" checked><span class="lever"></span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- #END# Right Sidebar -->
+    </div>
+
+    {{{body}}}    
+
+    <script src="/assets/js/app.min.js"></script>
+    <script src="/assets/js/table.min.js"></script>
+    <!-- Custom Js -->
+    <script src="/assets/js/admin.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js" ></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js" ></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js" ></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js" ></script>
+ 	<script src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js" ></script>
+ 	<script src="/assets/js/pages/tables/jquery-datatable.js"></script>
+
+    <script src="/assets/js/demo.js"></script>
+</body>
+
+</html>
